@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&display=swap');
+
+:root{
+    --white: #fff;
+    --darker: #000;
+    --red: #ef233c;
+    --green: #007f5f;
+    --darkgreen: #006d77;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+input , button{
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+body{
+    background-color: var(--white);
+    color: var(--darker);
+    min-height: 100vh;
+}
+
+header , .todos-container{
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    width: min(100% , 800px);
+}
+
+header h1, .todos-container h2{
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.todo-input{
+    background-color: var(--white);
+    box-shadow: 0 0 4px var(--darker);
+    border-radius: 2rem;
+    flex: 1 1;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+}
+
+.add-todo-btn{
+    background-color: var(--darkgreen);
+    padding: 0.8rem 1.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.add-todo-btn:hover{
+    scale: 0.8;
+    transition: all 200ms ease-in-out;
+}
+
+.todo-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem 0; 
+}
+
+.my-todo{
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0 0 4px var(--darker);
+    flex: 1 1;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.actions{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.8rem 1.3rem;
+}
+
+.edit{
+    font-weight: 800 ;
+    font-size: 0.9rem;
+    background-image: linear-gradient(to right , var(--green) , var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.delete{
+    font-weight: 800 ;
+    font-size: 0.9rem;
+    background-image: linear-gradient(to right , var(--red) , var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
